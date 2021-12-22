@@ -29,9 +29,8 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/XC0D3-X/special-ip/main/special-ip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
+
+if [ true ]; then
 clear
 echo -e  "═══════════════════════════════════════════════════════════"
 echo ""
