@@ -46,25 +46,6 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/muhamadparizan/kebenaran/main/ipdibenarkan | grep $MYIP )
-if [ true ]; then
-clear
-echo -e "${green}Tahniah! Anda Dibenarkan menggunakan Script Ctech Didik...${NC}"
-sleep 5
-else
-clear
-echo ""
-rm -f setup.sh
-echo '                            ...                           '
-echo '        Anda Tidak Dibenarkan Menggunakan Script ini!     '
-echo '                            ...                           '
-echo '    Tonton video Youtube saya dan dapatkan kebenaran!     '
-echo '   copy link utube ini:  https://youtu.be/gWk_k3SoaoI     '
-echo '                  Telegram t.me/ctechdidik                '
-sleep 20
-exit 0
-fi
 echo '============================================='
 echo '          Sila Tunggu sebentar '
 echo 'Process Update & Upgrade Sedang Dijalankan '
