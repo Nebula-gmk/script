@@ -48,7 +48,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 IZIN=$( curl https://raw.githubusercontent.com/muhamadparizan/kebenaran/main/ipdibenarkan | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
+if [ true ]; then
 clear
 echo -e "${green}Tahniah! Anda Dibenarkan menggunakan Script Ctech Didik...${NC}"
 sleep 5
